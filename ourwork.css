@@ -1,0 +1,33 @@
+section.section-ourwork {
+    padding: 40px;
+}
+.title-middle-ourwork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.title-middle-ourwork p::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 50px;
+    background: #084594;
+    margin: 15px auto 0 auto;
+}
+.container-work{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.wrapper-work img{
+    width: 100%;
+    height: 207px;
+}
+.wrapper-work{
+    margin: 1rem;
+}
+@media screen and (max-width:767px){
+    .container-work{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
