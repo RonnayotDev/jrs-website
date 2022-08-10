@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="about.css" />
-    <link rel="stylesheet" href="ourwork.css" />
     <link rel="stylesheet" href="contact.css" />
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
       rel="stylesheet"
     />
 
-    <title>Contact</title>
+    <title>Contact - JRS Thailand Co.,Ltd.</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -23,36 +22,50 @@
     />
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <a href="#"><img src="img/logo.png" alt="logo" /></a>
-        <div class="wrapper-logo">
-          <h2>Jor Jarern Sup Co.,Ltd.</h2>
-          <p>
-            61-63 Navatanee Village, Soi Navatanee 4, Navatanee Road,
-            Ramintra,Kannayao, Bangkok 10230
-          </p>
-        </div>
-      </div>
-      <ul>
-        <li><a class="link-a" href="index.html">หน้าแรก</a></li>
-        <li><a class="link-a" href="About.html">เกี่ยวกับเรา</a></li>
-        <div class="subnav">
-          <button class="subnav-btn">สินค้า</button>
-          <div class="subnav-content">
-            <div class="wrap-subnav-content">
-              <a href="#" class="item-subnav-content"
-                >พาเลท
-                <img src="img/pallete1.png" alt="" width="120px" />
-              </a>
-            </div>
+    <nav class="navbar">
+      <div class="grid-top">
+        <a href="index.html"
+          ><img src="img/JRS__3.png" alt="logo" width="129.5px;"
+        /></a>
+        <div class="wrapper-top">
+          <div class="text-top">
+            <p style="font-weight: bold">ห.จ.ก จ.เจริญทรัพย์ รีไซเคิล จำกัด</p>
+            <p>30 / 1 ม.6 ต.หมอนนาง อ.พนัสนิคม จ.ชลบุรี 20140</p>
+          </div>
+          <div class="contact-top">
+            <p>
+              <i
+                class="bi bi-envelope-fill"
+                style="color: crimson; font-size: 18px"
+              ></i>
+              : charoensup.recycle@hotmail.com
+            </p>
+            <p>
+              <i
+                class="bi bi-telephone-fill"
+                style="color: crimson; font-size: 18px"
+              ></i>
+              : 095-979-4544 , 081-4674084 , <br class="br-767" />096-896-5251
+            </p>
           </div>
         </div>
-        <li><a class="link-a" href="Ourwork.html">ผลงาน</a></li>
-        <li>
-          <a href="Contact.html"><button>ติดต่อ</button></a>
-        </li>
-      </ul>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a class="link-a" href="index.html">หน้าแรก</a></li>
+          <li><a class="link-a" href="About.html">เกี่ยวกับเรา</a></li>
+          <li><a class="link-a" href="Store.html">สินค้า</a></li>
+          <li>
+            <a href="Contact.html"><button>ติดต่อ</button></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ham-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
     <section class="section-contact">
       <div class="title-middle-contact" style="margin-top: 2rem">
@@ -61,55 +74,40 @@
       </div>
       <div class="container-contact">
         <div class="title-contact">
-          <h2>จ.เจริญทรัพย์ รีไซเคิล จำกัด</h2>
+          <h2>ห.จ.ก จ.เจริญทรัพย์ รีไซเคิล จำกัด</h2>
         </div>
         <div class="subdesc-contact">
-          <p>
-            Address :61-63 หมู่บ้าน นวธานี ซอยนวธานี 4 ถนน นวธานี แขวง รามอินทรา
-            เขต คันนายาว กรุงเทพมหานคร 10230
-          </p>
-          <p>Telephone : 095-979-4544</p>
+          <h3>
+            <i class="bi bi-geo-alt" style="padding-right: 1rem"></i
+            ><strong> ที่อยู่</strong> :
+            <span>30 / 1 ม.6 ต.หมอนนาง อ.พนัสนิคม จ.ชลบุรี 20140</span>
+          </h3>
+          <h3>
+            <i class="bi bi-telephone" style="padding-right: 1rem"></i
+            ><strong> เบอร์โทร</strong> :
+            <span>095-979-4544, 081-4674084, 096-896-5251</span>
+          </h3>
+          <h3>
+            <i class="bi bi-envelope" style="padding-right: 1rem"></i
+            ><strong> อีเมล</strong> :
+            <span>charoensup.recycle@hotmail.com</span>
+          </h3>
+          <h3>
+            <i class="bi bi-line" style="padding-right: 1rem"></i
+            ><strong> ไลน์</strong> : <span>bewpanus</span>
+          </h3>
         </div>
-        <div id="map" class="mapboxgl-map">
-          <div class="mapboxgl-canary" style="visibility: hidden"></div>
-          <div
-            class="mapboxgl-canvas-container mapboxgl-interactive mapboxgl-touch-drag-pan mapboxgl-touch-zoom-rotate"
-          >
-            <canvas
-              class="mapboxgl-canvas"
-              tabindex="0"
-              aria-label="Map"
-              role="region"
-              width="570"
-              height="350"
-              style="width: 456px; height: 280px"
-            ></canvas>
-          </div>
-          <div class="mapboxgl-control-container">
-            <div class="mapboxgl-ctrl-top-left"></div>
-            <div class="mapboxgl-ctrl-top-right"></div>
-            <div class="mapboxgl-ctrl-bottom-left">
-              <div class="mapboxgl-ctrl" style="display: block">
-                <a
-                  class="mapboxgl-ctrl-logo"
-                  target="_blank"
-                  rel="noopener nofollow"
-                  href="https://www.mapbox.com/"
-                  aria-label="Mapbox logo"
-                ></a>
-              </div>
-            </div>
-            <div class="mapboxgl-ctrl-bottom-right">
-              <div class="mapboxgl-ctrl mapboxgl-ctrl-attrib mapboxgl-compact">
-                <button
-                  class="mapboxgl-ctrl-attrib-button"
-                  title="Toggle attribution"
-                  aria-label="Toggle attribution"
-                ></button>
-                <div id='map'></div>
-              </div>
-            </div>
-          </div>
+        <h2 style="text-align: center; padding: 2rem">Map</h2>
+
+        <div class="map">
+          <iframe
+            scrolling="no"
+            allowtransparency="true"
+            width="600"
+            height="400"
+            src="https://map.longdo.com/snippet/iframe.php?locale=th&zoom=16&mode=icons&map=epsg3857&ooi=A10646866&zoombar=auto&toolbar=no&mapselector=no&scalebar=no&centermark=yes"
+            frameborder="0"
+          ></iframe>
         </div>
       </div>
     </section>
@@ -117,11 +115,7 @@
       <div class="container-footer">
         <div class="content-footer-left">
           <h2>ที่อยู่ติดต่อ</h2>
-          <p>
-            บริษัท จ.เจริญทรัพย์ รีไซเคิล จำกัด 61-63 หมู่บ้านนวธานี, ซอยนวธานี
-            4,<br />
-            ถนนนวธานี แขวงรามอินทรา, เขตคันนายาว, กรุงเทพ 10230
-          </p>
+          <p>30 / 1 ม.6 ต.หมอนนาง อ.พนัสนิคม จ.ชลบุรี 20140</p>
           <div class="wrapper-icon-footer">
             <div class="icon-contact-footer">
               <i class="fa-solid fa-envelope"> <h2>e-mail</h2></i>
@@ -131,7 +125,7 @@
             <div class="icon-contact-footer">
               <i class="fa-solid fa-phone"><h2>Phone</h2></i>
 
-              <p>095-979-4544</p>
+              <p>095-979-4544,<br> 081-4674084,<br> 096-896-5251</p>
             </div>
           </div>
         </div>
@@ -143,15 +137,6 @@
         <p>© Copyright 2022</p>
       </div>
     </section>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoicGFuZGFhbGNvaG9sIiwiYSI6ImNrcHc5ZTV5cjAyZDUyb24yZmRocWM3MnIifQ.--vx1bhBHWv7IJnbqZrTaQ';
-        var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center:[ -71.060982,42.35725 ] ,
-        zoom:18,
-        });
-        </script>
+    <script src="./navbar.js"></script>
   </body>
 </html>

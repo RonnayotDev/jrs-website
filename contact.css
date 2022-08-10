@@ -7,6 +7,17 @@ section.section-contact {
     align-items: center;
     margin-bottom: 40px;
 }
+h3 {
+    line-height: 3;
+}
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span {
+    font-weight: 400;
+}
 .title-middle-contact p::after {
     content: "";
     display: block;
@@ -25,4 +36,12 @@ section.section-contact {
 }
 .container-contact {
     padding: 4rem;
+}
+@media screen and (max-width:768px){
+    .container-contact {
+        padding: 0
+    }
+    section.section-contact {
+        padding: 2rem;
+    }
 }
